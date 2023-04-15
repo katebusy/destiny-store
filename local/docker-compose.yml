@@ -1,0 +1,19 @@
+version: '3'
+services:
+
+  postgres:
+    image: postgres:14.4
+    environment:
+      POSTGRES_DB: "main"
+      POSTGRES_USER: "sa"
+      POSTGRES_PASSWORD: "password"
+      PGDATA: /data/postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/data/postgres
+      - ./postgresql-init.sh:/docker-entrypoint-initdb.d/init.sh
+
+volumes:
+  postgres_data:
+    driver: local
