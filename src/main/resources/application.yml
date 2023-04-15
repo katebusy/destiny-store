@@ -4,6 +4,17 @@ server:
 spring:
   main:
     banner-mode: 'off'
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: >
+      jdbc:postgresql://${APP_POSTGRESQL_HOST}:${APP_POSTGRESQL_PORT}/${APP_POSTGRESQL_NAME}?
+      currentSchema={APP_POSTGRESQL_SCHEMA}"
+    username: ${APP_POSTGRESQL_USER}
+    password: ${APP_POSTGRESQL_PASSWORD}
+  liquibase:
+    change-log: db/migration/changelog.yml
+    default-schema: ${APP_POSTGRESQL_SCHEMA}
+    liquibase-schema: ${APP_POSTGRESQL_SCHEMA}
 
 management:
   endpoints:

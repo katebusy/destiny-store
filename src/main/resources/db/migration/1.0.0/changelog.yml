@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2023-04-15_01-create-items-table
+      author: busygina-ep
+      changes:
+        - sqlFile:
+            path: db/migration/1.0.0/2023-04-15_01-create-items-table.sql
