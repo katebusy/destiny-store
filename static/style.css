@@ -1,0 +1,184 @@
+/*
+ * Globals
+ */
+
+/* Custom default button */
+.btn-dark,
+.btn-light:hover,
+.btn-light:focus {
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+
+}
+
+.main-page {
+  background-image: url(images/Destiny2.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 650px;
+}
+
+
+/*
+ * Header
+ */
+
+
+.navbarHeader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1071;
+}
+
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, .5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.card-body {
+  height: 267px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col {
+  width: 416px;
+  min-width: 416px;
+  margin: auto;
+  margin-bottom: 1%;
+}
+
+.middle {
+  background-image: url(images/Destiny23.jpg);
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.row.row-cols-1.row-cols-sm-2.row-cols-md-3.g-3 {
+  justify-content: space-between;
+}
+
+.footer {
+  background-image: url(images/Destiny23.jpg);
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  size: 30px;
+  height: 235px;
+}
+
+.carousel {
+  height: 300px;
+}
+
+.carousel-item {
+  height: 318px;
+  width: 100%;
+  bottom: 0px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carousel-caption {
+  height: 300px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding-top: 0;
+}
+
+.carousel-indicators {
+  margin-bottom: 1rem;
+}
+
+.btn-light {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #32383a;
+  --bs-btn-hover-bg: #5b8995;
+  --bs-btn-hover-color: #fff;
+}
+
+.fw-bold.catalogshadow {
+  text-shadow: 0 0.1rem 0.5rem rgb(0 0 0);
+}
+
+.module {
+  height: 328px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 778px;
+}
+
+.modal-content {
+  display: block;
+  width: 100%;
+  height: 466px;
+}
+
+.carousel.slide.module {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.modal {
+  --bs-modal-width: auto;
+}
+
+.module-text {
+  padding: 5px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 14px;
+  text-align: right;
+}
+
+.text-container {
+  padding: 25px;
+}
+
+.col.col-button {
+  margin-left: 5%;
+}
