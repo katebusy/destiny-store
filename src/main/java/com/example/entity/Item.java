@@ -26,7 +26,6 @@ public class Item {
   private final String quoteText;
   private final String quoteAuthor;
   private final Double price;
-  //  private final String images;
   private final String material;
   private final String color;
 }
