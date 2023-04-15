@@ -1,0 +1,5 @@
+### Получение списка товаров
+GET http://localhost:8080/api/v1/items
+
+### Получение товара по id
+GET http://localhost:8080/api/v1/items/2baff11a-6db1-4053-b059-2a0cb376735f
