@@ -1,0 +1,31 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  main:
+    banner-mode: 'off'
+
+management:
+  endpoints:
+    enabled-by-default: false
+    web:
+      base-path: /
+      exposure.include: info, health, prometheus, loggers
+      path-mapping:
+        prometheus: metrics
+  endpoint:
+    info:
+      enabled: true
+    health:
+      enabled: true
+      probes:
+        enabled: true
+    prometheus:
+      enabled: true
+    loggers:
+      enabled: true
+
+springdoc:
+  show-actuator: true
+  swagger-ui.path: /api/doc
+  api-docs.path: /api

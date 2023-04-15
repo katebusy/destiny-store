@@ -1,0 +1,23 @@
+GET http://localhost:8080/health
+
+###
+
+GET http://localhost:8080/info
+
+###
+
+GET http://localhost:8080/metrics
+
+###
+
+GET http://localhost:8080/api
+
+###
+
+GET http://localhost:8080/api/doc
+
+###
+
+GET http://localhost:8080/loggers
+
+###
